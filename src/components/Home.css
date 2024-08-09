@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-container {
+  width: 100vw; /* Растягивание на всю ширину */
+  background-color: #FCFAF7; /* Бежфон */
+  margin-left: calc(-50vw + 50%); /* Центрирование фона */
+  padding: 40px 0; /* padding для корректного отображения */
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center; /* Центрирование контент */
+  gap: 40px; /* Увеличение расстояния между элементами */
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  max-width: 300px; /* Максимальная ширина для карточек */
+}
+
+.icon {
+  width: 140px; /* размер квадрата здесь */
+  height: 70px; /* размер квадрата здесь */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f1ea; /* Фон для бордера */
+  border-radius: 20px; /*углы*/
+  margin-right: 20px;
+}
+
+.icon svg {
+  width: 40px; 
+  height: 40px; 
+}
+
+.feature-text {
+  text-align: left;
+}
+
+.feature-text h3 {
+  color: #c49c78;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.feature-text p {
+  color: #333;
+  margin: 0;
+  font-size: 14px;
+}
+
+.content-section {
+  text-align: left;
+  padding: 40px 20px;
+}
+
+.content-section h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.content-section p {
+  color: #666;
+  font-size: 16px;
+}
+
+.invitation-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.invitation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Расстояние между карточками */
+  justify-content: center; /* Выравнивание по центру */
+}
+
+.card {
+  width: 300px; /* Ширина каждой карточки */
+  flex: 1;
+}
+
+
+/* Медиа-запр */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .feature {
+    margin-bottom: 20px;
+    max-width: none; 
+  }
+
+  .invitation-cards {
+    flex-direction: column;
+  }
+}
+

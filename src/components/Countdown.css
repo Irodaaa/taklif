@@ -1,0 +1,18 @@
+.countdown {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .countdown div {
+    flex: 1;
+  }
+
+  .time{
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    color: hsl(234, 10%, 39%);
+  }
