@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Countdown.css'
+import './Countdown.css';
 
 const Countdown = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState({});
@@ -30,8 +30,23 @@ const Countdown = ({ targetDate }) => {
   }
 
   return (
-    <div>
-      <p className='time'>{timeLeft.days || '0'} kun, {timeLeft.hours || '0'} soat, {timeLeft.minutes || '0'} minut, {timeLeft.seconds || '0'} sekund qoldi</p> 
+    <div className="countdown">
+      <div className="time-unit">
+        <span className="number">{timeLeft.days || '0'}</span>
+        <span className="unit">KUN</span>
+      </div>
+      <div className="time-unit">
+        <span className="number">{timeLeft.hours || '0'}</span>
+        <span className="unit">SOAT</span>
+      </div>
+      <div className="time-unit">
+        <span className="number">{timeLeft.minutes || '0'}</span>
+        <span className="unit">MINUT</span>
+      </div>
+      <div className="time-unit">
+        <span className="number">{timeLeft.seconds || '0'}</span>
+        <span className="unit">SECUND</span>
+      </div>
     </div>
   );
 };

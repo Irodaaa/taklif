@@ -4,10 +4,21 @@ import './InvitationTemplate.css';
 import { Link } from 'react-router-dom';
 
 const InvitationTemplate = ({ image, title, newPrice, oldPrice, sampleLink, createLink, onSampleClick, invitationDetails }) => {
+  const navigate = useNavigate();
+  const isAuthenticated = false; // Здесь нужно проверять, авторизован ли пользователь
+
   const handleSampleClick = () => {
     onSampleClick(invitationDetails);
   };
-    
+
+  const handleOrderClick = () => {
+    if (isAuthenticated) {
+      navigate(createLink); // Перенаправить на страницу создания, если пользователь авторизован
+    } else {
+      navigate('/login'); // Перенаправить на страницу входа, если пользователь не авторизован
+    }
+  };
+
   return (
     <div className="card">
       <img src={image} alt={title} />
@@ -20,10 +31,8 @@ const InvitationTemplate = ({ image, title, newPrice, oldPrice, sampleLink, crea
           <span className="old-price">{oldPrice}</span>
         </p>
         <div className="card-buttons">
-        <button onClick={handleSampleClick}>Namuna ko'rish</button>
-        <Link to={createLink}>
-        <button>Zakaz qilish</button>
-      </Link>
+          <button className="look-button" onClick={handleSampleClick}>Namuna ko'rish</button>
+          <button className="create-button" onClick={handleOrderClick}>Zakaz qilish</button>
         </div>
       </div>
     </div>

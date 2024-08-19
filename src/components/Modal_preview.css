@@ -1,0 +1,47 @@
+/* Modal.css */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Затемнение фона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Поднятие модального окна над другими элементами */
+}
+
+/* .modal-content {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px; 
+    max-height: 600px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+} */
+
+.modal-contents {
+    background-color: transparent; /* Сделайте фон прозрачным */
+    padding: 20px;
+    border: none; /* Удалите границу */
+    max-width: 400px;
+    max-height: 620px;
+    box-shadow: none; /* Уберите тень */
+    position: relative;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+.modal-backdrop .calendar-container .calendar-day {
+    font-family: "Cormorant Garamond", serif;
+    color: #717171;
+}
+
+.modal-backdrop .calendar-container .calendar-day.selected {
+    background-color: #CEC3C3;
+    color: white;
+}

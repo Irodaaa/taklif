@@ -1,0 +1,56 @@
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .auth-toggle button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .auth-toggle .active {
+    background-color: #e2bd9d;
+    color: #fff;
+  }
+  
+  .login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form label, .register-form label {
+    margin-bottom: 10px;
+  }
+  
+  .login-form input, .register-form input {
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-form button, .register-form button {
+    padding: 10px;
+    border: none;
+    background-color: #e2bd9d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  

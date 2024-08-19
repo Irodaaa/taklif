@@ -119,3 +119,8 @@
       margin-top: 10px;
     }
   }
+  .navbar-logo-img {
+    width: 40px; /* Установите нужный размер логотипа */
+    height: auto;
+    margin-right: 10px; /* Отступ справа, чтобы отделить логотип от текста */
+  }

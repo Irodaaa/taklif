@@ -1,0 +1,139 @@
+/* .invitation-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    text-align: center; 
+  }
+  
+  .taklif {
+    letter-spacing: 5px;
+    color: #555353;
+    text-align: center;
+  }
+  
+  .date1 {
+    font-family: 'Georgia', sans-serif;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 24px;
+    color: #555353;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .names {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 400;
+    font-size: 44px;
+    color: #555353;
+    margin: 0px 0;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+  
+  .ampersand {
+    font-family: "Alex Brush", cursive;
+    font-size: 44px;
+    color: #555353;
+    margin: 0px 0;
+    text-align: center;
+  }
+  
+  .static-message {
+    font-size: 20px;
+    font-style: italic;
+    color: #585353;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .event-details {
+    color: #727272;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 54px;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
+    display: block;
+  }
+  
+  .flower-decor {
+    width: 60px;
+    margin-top: 40px;
+    display: block;
+  }
+  
+  .footer, .footer2 {
+    color: #C4B5B4;
+    margin-top: 100px;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+  
+  .static-message-location {
+    font-size: 20px;
+    font-style: italic;
+    color: #585353;
+    margin-top: 6px;
+    margin-bottom: 32px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .invitation-container {
+    width: 90%;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .invitation-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .names, .ampersand {
+      font-size: 28px;
+    }
+  
+    .static-message, .event-details {
+      font-size: 16px;
+      margin: 20px;
+    }
+  
+    .default-photo {
+      max-width: 90%;
+      height: auto;
+      max-height: 300px;
+    }
+  
+    .custom-photo {
+      max-width: 100%;
+      height: auto;
+      max-height: 500px;
+    }
+  }
+   */

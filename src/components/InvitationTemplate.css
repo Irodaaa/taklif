@@ -60,7 +60,8 @@
   
   .card-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
+    gap: 10px;
   }
   
   .card-buttons button {
@@ -76,8 +77,12 @@
   }
   
   .create-button {
-    background-color: #F19A79;
+    font-family: "Poppins", sans-serif;
+    background-color: #fbb193;
     color: white;
+  }
+  .look-button{
+    font-family: "Poppins", sans-serif;
   }
   
   .create-button:hover {

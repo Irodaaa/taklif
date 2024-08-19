@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
+import logo from '../images/logo.png'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +14,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-content">
         <div className="navbar-left">
+        <img src={logo} alt="Logo" className="navbar-logo-img" />
           <h1 className="navbar-logo">TAKLIF</h1>
           <button className="hamburger" onClick={toggleMenu}>
             ☰
