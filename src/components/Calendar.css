@@ -1,0 +1,37 @@
+/* Calendar.css */
+.calendar-container {
+  max-width: 400px; /* Maximum calendar width */
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  border-radius: 10px;
+  margin-top: -20px; /* Adjusted to start higher */
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.calendar-day {
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  padding: 10px 0;
+  color: #717171;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.calendar-day.empty {
+  background: none;
+}
+
+.calendar-day.selected {
+  background-color: #CEC3C3; /* Цвет выбранного дня */
+  color: white;
+  border-radius: 50%; /* Круглая форма для выделения */
+}
+.calendar-day.header {
+  font-weight: bold; /* Bold headers */
+  color: #7b7b7b;
+}

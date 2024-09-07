@@ -1,0 +1,26 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.time-unit {
+  background: #F2EEEE; /* Белый фон */
+  border-radius: 10px; /* Скругление углов */
+  padding: 12px 20px; /* Поля вокруг текста */
+}
+
+.number {
+  display: block;
+  font-size: 18px; /* Размер шрифта чисел */
+  font-weight: bold; /* Жирный шрифт */
+  color: #89757A;
+}
+
+.unit {
+  display: block;
+  font-size: 10px; /* Размер шрифта текста */
+  color: #89757A; /* Цвет текста */
+  text-transform: uppercase; /* Все буквы заглавные */
+  margin-top: 10px; /* Отступ сверху для единиц измерения */
+}

@@ -1,0 +1,85 @@
+/* App.css */
+
+/* Стили для секции свадьбы */
+.wedding-section {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .wedding-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .wedding-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для карточки свадьбы */
+  .wedding-card {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #c49c78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #a3815a;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .close-button {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .wedding-image {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .wedding-info {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .audio-player {
+    margin-top: 20px;
+  }
+  
