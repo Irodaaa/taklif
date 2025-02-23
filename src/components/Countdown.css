@@ -7,12 +7,12 @@
 .time-unit {
   background: #F2EEEE; /* Белый фон */
   border-radius: 10px; /* Скругление углов */
-  padding: 12px 20px; /* Поля вокруг текста */
+  padding: 10px 16px; /* Поля вокруг текста */
 }
 
 .number {
   display: block;
-  font-size: 18px; /* Размер шрифта чисел */
+  font-size: 14px; /* Размер шрифта чисел */
   font-weight: bold; /* Жирный шрифт */
   color: #89757A;
 }

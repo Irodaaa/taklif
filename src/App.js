@@ -1,15 +1,23 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import CreateInvitation from './components/CreateInvitation';
-import Login from './components/Login';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import CreateInvitation from "./components/CreateInvitation";
+import Login from "./components/Login";
+import { useJsApiLoader } from "@react-google-maps/api";
+
+const mapLibraries = ["places"];
 
 const App = () => {
   const location = useLocation();
+  const showNavbar = !location.pathname.includes("/invitation/");
 
-  // Don't show Navbar on the invitation view page
-  const showNavbar = !location.pathname.includes('/invitation/');
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: "AIzaSyC_SWzf8RHvi-bp_15paSOy-ojqL0Bzdyw",
+    libraries: mapLibraries,
+  });
+
+  if (!isLoaded) return <div>Loading Maps...</div>; // Отображаем "загрузка" пока карты загружаются
 
   return (
     <div>

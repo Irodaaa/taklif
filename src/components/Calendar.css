@@ -1,24 +1,26 @@
 /* Calendar.css */
 .calendar-container {
   max-width: 400px; /* Maximum calendar width */
-  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   font-family: 'Georgia', serif;
   border-radius: 10px;
-  margin-top: -20px; /* Adjusted to start higher */
+  margin-top: 0px; /* Adjusted to start higher */
 }
 
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
+  gap: 6px;
   margin-top: 15px;
 }
 
 .calendar-day {
   font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
   text-align: center;
-  padding: 10px 0;
-  color: #717171;
+  padding: 8px 0;
+  color: #534F4F;
   transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
@@ -33,5 +35,5 @@
 }
 .calendar-day.header {
   font-weight: bold; /* Bold headers */
-  color: #7b7b7b;
+  color: #534F4F;
 }

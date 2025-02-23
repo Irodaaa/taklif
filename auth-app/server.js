@@ -6,14 +6,15 @@ const bodyParser = require('body-parser');  // Подключаем body-parser
 const app = express();
 
 // Настройка body-parser для увеличения лимита размера тела
-app.use(bodyParser.json({ limit: '10mb' }));  // Увеличиваем до 10MB (или больше, если нужно)
-app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:3000',  // Указываем конкретный origin (React приложение)
-  credentials: true                 // Включаем поддержку авторизации через куки
+  origin: ['http://localhost:3000', 'https://taklif-coral.vercel.app'], // Укажите домен с Vercel
+  credentials: true // Разрешить куки, если используются
 }));
+
 
 // Подключение к MongoDB
 mongoose.connect(process.env.MONGO_URI, {

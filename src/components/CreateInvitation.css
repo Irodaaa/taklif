@@ -10,17 +10,17 @@
 }
 
 .classic {
-  font-family: "Cormorant Garamond", serif;  
-  font-weight: 500;
-  background-color: #F5F6F6;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  background-color: none;
 }
 
 .modern {
-  background-color: #fbf4f2;
+  background-color: none;
 }
 
 .vintage {
-    background-color: #fbf7f0;
+    background-color: none;
   }
 
 
@@ -51,10 +51,10 @@ input[type="text"], input[type="date"], input[type="time"] {
 }
 
 .invitation-previeww {
-  /* background-color: #fdf7f2; */
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Закругление углов */
+  box-shadow: none; /* Убирает тень */
+  background-color: #fff; /* Белый фон для всей карточки */
+  padding-bottom: 20px; /* Увеличенный нижний отступ */
   margin-top: 20px;
 }
 
@@ -66,43 +66,62 @@ input[type="text"], input[type="date"], input[type="time"] {
 }
 
 .names {
-  font-family: "Monsieur La Doulaise", cursive;
+  font-family: "Monsieur La Doulaise", serif;
   font-weight: 400;
-  font-size: 52px; 
+  font-size: 38px; 
   color: #555353;
   margin: 0px 0; 
-  letter-spacing: 4px;
 }
 
 .ampersand {
-  font-family: "Alex Brush", cursive;
-  font-size: 44px; 
+  font-family: "Monsieur La Doulaise", serif;
+  font-weight: 400;
+  font-size: 28px; 
   color: #555353;
-  margin: 0px 0; 
+  margin: 10px 0; 
+  letter-spacing: 1px;
 }
 
 .static-message {
-  font-size: 20px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-size: 16px;
   font-style:italic;
-  color: #585353;
-  margin-top: 20px;
+  color: #888080;
+  margin-top: 10px;
   margin-bottom: 32px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 54px;
+  margin-right: 54px;
   display: block; 
-  line-height:30px;
+  line-height:24px;
+}
+
+.static-message1 {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-style: italic;
+  color: #585353;
+  margin: 10px auto 32px auto; 
+  padding: 0 20px; 
+  max-width: 240px;
+  display: block; 
+  line-height: 28px; 
+  text-align: center; 
 }
 
 .static-messagee {
-  font-size: 20px;
-  font-style:italic;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-style: italic;
   color: #585353;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 10px auto 78px auto; 
+  padding: 20px 20px; 
+  max-width: 240px;
   display: block; 
-  line-height:30px;
+  line-height: 28px; 
+  text-align: center; 
 }
 
 /* Контейнер для ссылки */
@@ -161,23 +180,31 @@ input[type="text"], input[type="date"], input[type="time"] {
   margin-top: 5px; 
 }
 .event-details {
+  background: transparent;
   color: #727272; 
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style:italic;
   font-size: 16px; 
-  margin-top: 60px; 
+  margin-top: 50px; 
   margin-bottom: 54px;
   margin-right: 30px;
   margin-left: 30px;
   text-align: center; 
   display: block; 
 }
+
+.event-details-loc {
+  margin-top: 6px;
+}
+
 .flower-decor {
-  width: 60px; 
+  width: 40px; 
   margin-top: 40px;
 }
 
 .footer {
+  font-size: 12px;
   color: #C4B5B4;
   margin-top: 100px;
   margin-bottom: 0;
@@ -186,8 +213,19 @@ input[type="text"], input[type="date"], input[type="time"] {
 
 .footer2 {
   color: #C4B5B4;
-  margin-top: 100px;
+  margin-top: 20px;
   margin-bottom: 0;
+  letter-spacing: 4px;
+  background: none; /* Убирает лишний фон */
+  padding: 0;
+  text-align: center;
+}
+
+
+.footer3 {
+  font-size: 12px;
+  color: #a8a7a7;
+  margin-bottom: 20px;
   letter-spacing: 4px
 }
 
@@ -250,35 +288,75 @@ input[type="date"]::-ms-expand, input[type="time"]::-ms-expand {
   color: #333;
   
 }
+
+.calendarplace {
+  background-color: #F6F5F5;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
 .line {
-  height: 2px;
+  height: 1px;
   background-color: #E8DFDF; 
-  margin-top: 36px;
+  margin-top: 26px;
   margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .line1 {
   height: 1px;
   background-color: #E8DFDF; 
   margin-top: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .date{
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
   margin-top: 10px;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 18px;
   color: #73686B;
   letter-spacing: 4px;
 }
 
 .datee{
-  font-family: "Cormorant Garamond", serif;
-  font-size: 16px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-size: 12px;
   color: #73686B;
   margin-bottom: 0px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+}
+.date-display {
+  text-align: center;
+  font-size: 24px; /* Размер шрифта */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.date-display .date {
+  font-size: 28px; /* Для даты с "|" */
+}
+
+.date-display .day-of-week {
+  font-size: 18px; /* Для дня недели */
+  color: #555353; /* Мягкий оттенок для дня недели */
+  letter-spacing: 3px;
+}
+
+
+.dateee{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #5e585a;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
 }
 
 .taklif {
@@ -350,22 +428,28 @@ input[type="date"]::-ms-expand, input[type="time"]::-ms-expand {
 }
 
 
-.static-message-location{
-  font-size: 20px;
-  font-style:italic;
+.static-message-location {
+  background: none;
+  font-size: 16px;
+  font-style: italic;
   color: #585353;
   margin-top: 6px;
   margin-bottom: 32px;
-  margin-left: 40px;
-  margin-right: 40px;
-  display: block; 
-  line-height:30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  line-height: 30px;
+  max-width: 300px; /* Чтобы текст не растягивался */
+  background: none; /* Убирает фон */
+  padding: 0; /* Убирает отступы */
+  text-align: center;
 }
 
 .default-photo {
   width: 200px; 
   height: auto;
-  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .custom-photo {
@@ -438,6 +522,28 @@ input[type="date"]::-ms-expand, input[type="time"]::-ms-expand {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.map-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.map-container h5 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 18px;
+  color: #585353;
+  margin-bottom: 10px;
+}
+
+.map-container p {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 14px;
+  color: #888080;
 }
 
 
